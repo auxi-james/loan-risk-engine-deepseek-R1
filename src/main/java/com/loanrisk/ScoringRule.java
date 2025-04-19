@@ -24,6 +24,7 @@ public class ScoringRule {
     private String value;
     
     @Positive(message = "Risk points must be positive")
+    @Positive(message = "Risk points must be positive")
     private int riskPoints;
     
     @Positive(message = "Priority must be positive")

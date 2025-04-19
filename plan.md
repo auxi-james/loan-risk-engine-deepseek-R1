@@ -150,7 +150,7 @@ graph TD
 
 | Phase         | Step               | Status | Test Pass | Commit SHA |
 |---------------|--------------------|--------|-----------|------------|
-| Core Engine   | Database Entities  | ✅     | Yes       | a1b2c3d    |
+| Core Engine   | Database Entities  | ✅     | Yes       | 72f20c6    |
 | Core Engine   | Rule Loader        | ⏳     | No        | -          |
 | Core Engine   | Scoring Logic      | ⏳     | No        | -          |
 | Core Engine   | Risk Mapping       | ⏳     | No        | -          |
