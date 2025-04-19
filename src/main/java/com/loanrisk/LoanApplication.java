@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -30,7 +32,9 @@ public class LoanApplication {
     private String decision;
     
     @ElementCollection
-    private List<String> explanation;
+    @CollectionTable(name = "risk_explanations", joinColumns = @JoinColumn(name = "loan_id"))
+    @Column(name = "explanation")
+    private List<String> explanations = new ArrayList<>();
     
     private LocalDateTime createdAt;
 
